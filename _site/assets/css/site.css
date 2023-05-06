@@ -1,0 +1,413 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+/* Variables */
+:root {
+    /* Headings */
+    --heading-font-family: 'obviously', sans-serif;
+    --heading-font-weight: 700;
+    --heading-font-style: italic;
+
+    /* Body */
+    --body-font-family: 'Roboto', sans-serif;
+
+    /* Colours */
+    --colour-black: #1a1a1b;
+    --colour-white: #FFFFFF;
+    --colour-grey: #2c2c2e;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-s: 10px;
+    --spacing-m: 20px;
+    --spacing-l: 40px;
+    --spacing-xl: 80px;
+    --spacing-xxl: 120px;
+
+    /* Layout */
+    --page-width: 1600px;
+    --content-width: 900px;
+
+    /* Transition */
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: var(--body-font-family);
+    color: var(--colour-white);
+    margin: unset;
+}
+
+/* Layout */
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--colour-grey);
+    margin: 0 auto;
+    padding: var(--spacing-s);
+    box-sizing: border-box;
+    @media screen and (min-width:750px) {
+        padding: var(--spacing-m);
+    }
+    @media screen and (min-width:1250px) {
+        padding: var(--spacing-l);
+    }
+}
+
+.section:first-of-type {
+    padding-top: unset;
+    min-height: 100vh;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, var(--colour-grey) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(60%, rgba(0,0,0,1)), color-stop(100%, var(--colour-grey)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, var(--colour-grey) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, var(--colour-grey) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, var(--colour-grey) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, var(--colour-grey) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#424242', GradientType=0);
+    @media screen and (min-width:750px) {
+        padding-top: 200px;
+    }
+}
+
+.section--slider {
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.section--slider .section__inner {
+    max-width: unset;
+}
+
+.section__inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--page-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: var(--spacing-s);
+    @media screen and (min-width: 750px) {
+        justify-content: unset;
+        gap: var(--spacing-m);
+    }
+}
+
+.section__inner h1,
+.section__inner h2,
+.section__inner h3,
+.section__inner h4,
+.section__inner h5,
+.section__inner h6,
+.section__inner p,
+.section__inner ol,
+.section__inner ul {
+    max-width: var(--content-width)
+}
+
+/* Headings */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    margin: unset;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: unset;
+    margin-bottom: var(--spacing-xs);
+}
+
+h1, .h1 {
+    font-size: 28px;
+    line-height: 35px;
+    @media screen and (min-width:500px) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    @media screen and (min-width:750px) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 34px;
+        line-height: 41px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 36px;
+        line-height: 43px;
+    }
+    @media screen and (min-width:1500px) {
+        font-size: 38px;
+        line-height: 45px;
+    }
+}
+
+h2, .h2 {
+    font-size: 24px;
+    line-height: 31px;
+    @media screen and (min-width:500px) {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    @media screen and (min-width:750px) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    @media screen and (min-width:1500px) {
+        font-size: 34px;
+        line-height: 41px;
+    }
+}
+
+h3, .h3 {
+    font-size: 20px;
+    line-height: 28px;
+    @media screen and (min-width:500px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    @media screen and (min-width:750px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    @media screen and (min-width:1500px) {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+h4, .h4 {
+    font-size: 18px;
+    line-height: 25px;
+    @media screen and (min-width:500px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    @media screen and (min-width:750px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    @media screen and (min-width:1500px) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+h5, .h5,
+h6, .h6 {
+    font-size: 16px;
+    line-height: 24px;
+    @media screen and (min-width:500px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    @media screen and (min-width:750px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    @media screen and (min-width:1500px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    @media screen and (min-width:1250px) {
+        margin-bottom: 30px;
+    }
+}
+
+h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    @media screen and (min-width:1250px) {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+h4, h5, h6 {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    @media screen and (min-width:1250px) {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Body */
+p, 
+.p--large,
+ul,
+ol {
+    margin: 10px 0px;
+    @media screen and (min-width:750px) {
+        margin: 15px 0px;
+    }
+    @media screen and (min-width:1250px) {
+        margin: 20px 0px;
+    }
+}
+
+p,
+li,
+label,
+pre,
+blockquote,
+address {
+    font-size: 16px;
+    line-height: 24px;
+    @media screen and (min-width:750px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.p--large {
+    font-size: 18px;
+    line-height: 26px;
+    @media screen and (min-width:750px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media screen and (min-width:1250px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+a, a:visited:not(.button, .button--secondary) {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Buttons */
+.button, .button--secondary {
+    display: inline-block;
+    margin: var(--spacing-m) var(--spacing-s) var(--spacing-m) 0;
+    padding: var(--spacing-s) var(--spacing-m);
+    text-decoration: none;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+
+.button {
+    background-color: var(--colour-white);
+    border: 2px solid var(--colour-white);
+    color: var(--colour-black);
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--colour-white);
+}
+
+.button--secondary {
+    background-color: transparent;
+    border: 2px solid var(--colour-white);
+    color: var(--colour-white);
+}
+
+.button--secondary:hover {
+    background-color: var(--colour-white);
+    color: transparent;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-s);
+    width: 100%;
+    max-width: 800px;
+    @media screen and (min-width:500px) {
+        gap: var(--spacing-m);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (min-width:1000px) {
+        gap: var(--spacing-l);
+    }
+}
+
+.grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.grid__item svg {
+    width: 30px;
+    @media screen and (min-width: 1000px) {
+        width: 50px;
+    }
+}
+
+.grid__item svg:hover {
+    animation: bounce 1.5s infinite;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

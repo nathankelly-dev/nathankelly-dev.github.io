@@ -1,0 +1,15 @@
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    padding: 0 var(--spacing-m);
+    box-sizing: border-box;
+}
+
+.header__nav-list {
+    display: none;
+}

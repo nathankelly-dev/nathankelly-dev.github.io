@@ -1,0 +1,51 @@
+.section--hero .img__container {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid var(--colour-white);
+    margin-bottom: var(--spacing-m);
+    opacity: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.section--hero .img--profile {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    
+}
+
+.section--hero h1 {
+    opacity: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.section--hero p {
+    opacity: 0;
+    text-align: center;
+    animation: fadeInAnimation ease 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.section--hero .icon--scroll-down {
+    position: absolute;
+    bottom: 75px;
+    opacity: 0;
+    animation: fadeInAnimation ease 1s, bounce 1.5s infinite;
+    animation-delay: 1.8s, 2.8s;
+    animation-fill-mode: forwards;
+    transition: var(--transition);
+    @media screen and (min-width: 750px) {
+        bottom: 50px;
+    }
+}
