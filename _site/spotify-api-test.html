@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify API</title>
+    <link rel="stylesheet" href="https://use.typekit.net/fib6csq.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/image-with-text.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
+</head>
+<header>
+    <div class="header__logo">
+        <h1>NK</h1>
+    </div>
+    <div>
+    <div class="header__nav-toggle">
+        <ul class="header__nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <section class="section">
+    <div class="section__inner">
+        <h1>Spotify Data App</h1>
+        <p>Use the input field below to find Spotify data about a song, an artist or an album.
+            Simply grab a share link from Spotify, paste it into the field and hit the button
+        </p>
+        <input type="text" id="song-input" placeholder="">
+        <a class="button" onclick="getSpotifyData()">Go!</a>
+        <div id="song-data"></div>
+        <script src="assets/js/spotify-api.js"></script>
+    </div>
+</section>
+</body>
+</html>
