@@ -1,12 +1,11 @@
 .section--parallax {
-    min-height: 200px;
+    min-height: 400px;
     overflow: hidden;
-    @media screen and (min-width:500px) {
-        min-height: 250px;
-    }
-    @media screen and (min-width:750px) {
-        min-height: 300px;
-    }
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     @media screen and (min-width:1000px) {
         min-height: 500px;
     }
@@ -18,26 +17,35 @@
     }
 }
 
-.section--parallax img,
-.section--parallax video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    filter: contrast(0.7);
+.section--parallax:first-of-type {
+    min-height: 100vh;
+    align-items: center;
 }
 
-.section--parallax img::after,
-.section--parallax video::after {
-    content: '';
-    width: 100%;
+.section--parallax-1 {
+    background-image: url(/assets/images/background-parallax-1.jpg);
+}
+
+.section--parallax-2 {
+    background-image: url(/assets/images/background-parallax-2.jpg);
+}
+
+.section--parallax-3 {
+    background-image: url(/assets/images/background-parallax-4.jpg);
+}
+
+.section--parallax-video {
+    height: 300px;
+    @media screen and (min-width:1000px) {
+        min-height: 400px;
+    }
+}
+
+.section--parallax-video video {
+    min-width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    object-fit: cover;
+    position: fixed;
+    top:0;
+    z-index: -999;
 }
