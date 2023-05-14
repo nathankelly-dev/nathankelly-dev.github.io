@@ -6,7 +6,7 @@ curl -X POST "https://accounts.spotify.com/api/token" \
 
 const getSpotifyData = () => {
     const input = document.getElementById("song-input").value;
-    const regex = /spotify.com\/(track|album|artist)\/(\w+)/;
+    const regex = /spotify.com\/(track|album|artist|playlist|show)\/(\w+)/;
     const match = input.match(regex);
     const type = match[1];
     const id = match[2];
@@ -53,7 +53,7 @@ const getSpotifyData = () => {
             <p class="h4"><b>Name:</b> ${albumName}</p>
             <p class="h4"><b>Artist:</b> ${artistName}</p>
             <p class="h4"><b>Release Date:</b> ${releaseDate}</p>
-            <p class="h4"><b>Total tracks:</b> ${totalTracks}</p>
+            <p class="h4"><b>Number of tracks:</b> ${totalTracks}</p>
             <br>
             <br>
             <img src="${imgSrc}">
@@ -64,7 +64,7 @@ const getSpotifyData = () => {
             const artistGenre = data.genres;
             const artistFollowers = data.followers.total;
             const artistPopularity = data.popularity;
-            const imgSrc = data.images[1].url;
+            const imgSrc = data.images[0].url;
             output = `
             <h2>${type.toUpperCase()}</h2>
             <p class="h4"><b>Name:</b> ${artistName}</p>
@@ -75,6 +75,25 @@ const getSpotifyData = () => {
             <br>
             <img src="${imgSrc}">
             `;
+        }
+        else if (type == 'playlist') {
+          const playlistName = data.name;
+          const playlistDescription = data.description;
+          const playlistOwner = data.owner.display_name;
+          const playlistTrackTotal = data.tracks.total;
+          const playlistFollowerTotal = data.followers.total;
+          const imgSrc = data.images[0].url;
+          output = `
+          <h2>${type.toUpperCase()}</h2>
+          <p class="h4"><b>Name:</b> ${playlistName}</p>
+          <p class="h4"><b>Description:</b> ${playlistDescription}</p>
+          <p class="h4"><b>Playlist owner:</b> ${playlistOwner}</p>
+          <p class="h4"><b>Number of tracks:</b> ${playlistTrackTotal}</p>
+          <p class="h4"><b>Number of followers:</b> ${playlistFollowerTotal}</p>
+          <br>
+          <br>
+          <img src="${imgSrc}">
+          `;
         }
       document.getElementById("song-data").innerHTML = output;
     })

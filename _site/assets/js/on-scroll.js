@@ -1,8 +1,6 @@
 const sectionElements = document.querySelectorAll('.slider--fade-in');
 const heroSection = document.querySelector('.section--hero');
 const scrollArrow = document.querySelector('.icon--scroll-down');
-console.log(heroSection);
-console.log(scrollArrow);
 
 window.addEventListener('scroll', () => {
     const viewportHeight = window.innerHeight;
