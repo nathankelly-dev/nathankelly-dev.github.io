@@ -1,3 +1,9 @@
+/* Must have an access token to use this app:
+curl -X POST "https://accounts.spotify.com/api/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=CLIENTID&client_secret=CLIENTSECRET"
+*/
+
 const getSpotifyData = () => {
     const input = document.getElementById("song-input").value;
     const regex = /spotify.com\/(track|album|artist)\/(\w+)/;
@@ -9,7 +15,7 @@ const getSpotifyData = () => {
   
     fetch(apiUrl, {
       headers: {
-        "Authorization": "Bearer ACCESS_TOKEN_HERE"
+        "Authorization": "Bearer ACCESS_TOKEN"
       }
     })
     .then(response => response.json())
