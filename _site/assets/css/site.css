@@ -36,14 +36,17 @@ body {
     font-family: var(--body-font-family);
     color: var(--colour-white);
     margin: unset;
+    position: relative;
 }
 
-img {
+img,
+video {
     max-width: 100%;
 }
 
 /* Layout */
 .section {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,7 +62,7 @@ img {
     }
 }
 
-.section:first-of-type {
+.section:first-of-type:not(.section--parallax) {
     padding-top: unset;
     min-height: 100vh;
     background: rgba(0,0,0,1);
