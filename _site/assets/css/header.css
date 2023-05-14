@@ -8,6 +8,7 @@ header {
     background-color: transparent;
     padding: 0 var(--spacing-m);
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .header__nav-list {
