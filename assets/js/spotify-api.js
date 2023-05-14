@@ -32,7 +32,7 @@ const getSpotifyData = () => {
 
             output = `
             <h2>${type.toUpperCase()}</h2>
-            <p class="h4"><b>Song:</b> ${songName}</p>
+            <p class="h4"><b>Name:</b> ${songName}</p>
             <p class="h4"><b>Artist:</b> ${artistName}</p>
             <p class="h4"><b>Duration:</b> ${songDuration}</p>
             <p class="h4"><b>Release Date:</b> ${releaseDate}</p>
@@ -64,10 +64,10 @@ const getSpotifyData = () => {
             const artistGenre = data.genres;
             const artistFollowers = data.followers.total;
             const artistPopularity = data.popularity;
-            const imgSrc = data.images[0].url;
+            const imgSrc = data.images[1].url;
             output = `
             <h2>${type.toUpperCase()}</h2>
-            <p class="h4"><b>Artist:</b> ${artistName}</p>
+            <p class="h4"><b>Name:</b> ${artistName}</p>
             <p class="h4"><b>Genres:</b> ${artistGenre}</p>
             <p class="h4"><b>Follower count:</b> ${artistFollowers}</p>
             <p class="h4"><b>Popularity:</b> ${artistPopularity}</p>
