@@ -1,6 +1,21 @@
 .section--parallax {
-    min-height: 100vh;
+    min-height: 200px;
     overflow: hidden;
+    @media screen and (min-width:500px) {
+        min-height: 250px;
+    }
+    @media screen and (min-width:750px) {
+        min-height: 300px;
+    }
+    @media screen and (min-width:1000px) {
+        min-height: 500px;
+    }
+    @media screen and (min-width:1250px) {
+        min-height: 600px;
+    }
+    @media screen and (min-width:1500px) {
+        min-height: 700px;
+    }
 }
 
 .section--parallax img,
