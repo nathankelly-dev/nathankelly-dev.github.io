@@ -13,3 +13,8 @@
   link: /background-parallax
   image_src: assets/images/background-parallax.png
   image_alt: 'Placeholder image'
+- title: React Calculator
+  description: A calculator app that runs on React
+  link: /react-calculator
+  image_src: assets/images/background-parallax.png
+  image_alt: 'Placeholder image'
