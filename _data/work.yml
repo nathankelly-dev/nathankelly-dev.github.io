@@ -3,11 +3,11 @@
   link: /spotify-api-test
   image_src: assets/images/spotify-data-app.png
   image_alt: 'Featured image for my Spotify Data App'
-- title: Example title 2
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium lorem neque, a luctus tellus malesuada non. Proin vel dictum eros, pretium faucibus nibh. Etiam rutrum quam dui, in vulputate neque tincidunt faucibus.
-  link: /
-  image_src: assets/images/3-2 placeholder.png
-  image_alt: 'Placeholder image'
+- title: Thought and Mortar Website
+  description: I built the TM Website from scratch using Statamic 3 and Laravel
+  link: https://thoughtandmortar.com/
+  image_src: assets/images/thought-and-mortar.png
+  image_alt: Featured image for the Thought and Mortar website
 - title: Example title 3
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium lorem neque, a luctus tellus malesuada non. Proin vel dictum eros, pretium faucibus nibh. Etiam rutrum quam dui, in vulputate neque tincidunt faucibus.
   link: /
