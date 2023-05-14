@@ -38,6 +38,10 @@ body {
     margin: unset;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Layout */
 .section {
     width: 100%;
@@ -410,4 +414,11 @@ a, a:visited:not(.button, .button--secondary) {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Inputs */
+input[type=text] {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 0;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>Spotify API</title>
     <link rel="stylesheet" href="https://use.typekit.net/fib6csq.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <!-- CSS -->
@@ -29,6 +29,17 @@
     </div>
 </header>
 <body>
-    {{ content }}
+    <section class="section">
+    <div class="section__inner">
+        <h1>Spotify Data App</h1>
+        <p>Use the input field below to find Spotify data about a song, an artist or an album.
+            Simply grab a share link from Spotify, paste it into the field and hit the button
+        </p>
+        <input type="text" id="song-input" placeholder="">
+        <a class="button" onclick="getSpotifyData()">Go!</a>
+        <div id="song-data"></div>
+        <script src="assets/js/spotify-api.js"></script>
+    </div>
+</section>
 </body>
 </html>

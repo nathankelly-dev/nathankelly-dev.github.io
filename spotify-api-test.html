@@ -1,0 +1,16 @@
+---
+layout: default
+title: Spotify API
+---
+<section class="section">
+    <div class="section__inner">
+        <h1>Spotify Data App</h1>
+        <p>Use the input field below to find Spotify data about a song, an artist or an album.
+            Simply grab a share link from Spotify, paste it into the field and hit the button
+        </p>
+        <input type="text" id="song-input" placeholder="">
+        <a class="button" onclick="getSpotifyData()">Go!</a>
+        <div id="song-data"></div>
+        <script src="assets/js/spotify-api.js"></script>
+    </div>
+</section>
