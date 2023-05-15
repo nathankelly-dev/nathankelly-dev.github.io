@@ -11,5 +11,10 @@
 - title: Background Parallax
   description: This page is a test area for a background parallax effect.
   link: /background-parallax
-  image_src: assets/images/parallax-background-featured.jpg
-  image_alt: 'Placeholder image'
+  image_src: assets/images/background-parallax.png
+  image_alt: 'Screenshot of the background parallax feature'
+- title: React Calculator
+  description: A calculator app that runs on React
+  link: /react-calculator
+  image_src: assets/images/react-calculator-2.jpg
+  image_alt: 'Image of the React calculator'
