@@ -62,7 +62,7 @@ video {
     }
 }
 
-.section:first-of-type {
+.section:first-of-type:not(.section--parallax) {
     padding-top: unset;
     min-height: 100vh;
     background: rgba(0,0,0,1);
