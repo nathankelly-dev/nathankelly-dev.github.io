@@ -1,0 +1,11 @@
+destination: _site
+incremental: false
+exclude:
+  - node_modules
+  - src/
+  - package.json
+  - package-lock.json
+include:
+  - build/
+  - react-calculator.html
+  - index.html
