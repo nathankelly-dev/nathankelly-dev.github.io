@@ -1,20 +1,20 @@
-- title: Spotify Data App
-  description: Using the Spotify API, I've built a simple app which returns data from a Spotify share link.
-  link: /spotify-api-test
-  image_src: assets/images/spotify-data-app.png
-  image_alt: 'Featured image for my Spotify Data App'
 - title: Thought and Mortar Website
   description: I built the TM Website from scratch using Statamic 3 and Laravel
   link: https://thoughtandmortar.com/
   image_src: assets/images/thought-and-mortar.png
   image_alt: Featured image for the Thought and Mortar website
-- title: Background Parallax
-  description: This page is a test area for a background parallax effect.
-  link: /background-parallax
-  image_src: assets/images/background-parallax.png
-  image_alt: 'Screenshot of the background parallax feature'
 - title: React Calculator
   description: A calculator app that runs on React
   link: /react-calculator
   image_src: assets/images/react-calculator-2.jpg
   image_alt: 'Image of the React calculator'
+- title: Spotify Data App
+  description: Using the Spotify API, I've built a simple app which returns data from a Spotify share link.
+  link: /spotify-api-test
+  image_src: assets/images/spotify-data-app.png
+  image_alt: 'Featured image for my Spotify Data App'
+- title: Background Parallax
+  description: This page is a test area for a background parallax effect.
+  link: /background-parallax
+  image_src: assets/images/background-parallax.png
+  image_alt: 'Screenshot of the background parallax feature'
