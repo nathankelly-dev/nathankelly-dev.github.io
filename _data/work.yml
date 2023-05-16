@@ -6,7 +6,7 @@
 - title: React Calculator
   description: A calculator app that runs on React
   link: https://sprightly-fudge-5c418c.netlify.app/
-  image_src: assets/images/react-calculator-2.jpg
+  image_src: assets/images/react-calculator-3.png
   image_alt: 'Image of the React calculator'
 - title: Spotify Data App
   description: Using the Spotify API, I've built a simple app which returns data from a Spotify share link.
