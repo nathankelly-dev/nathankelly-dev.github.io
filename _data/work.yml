@@ -18,3 +18,8 @@
   link: /background-parallax
   image_src: assets/images/background-parallax.png
   image_alt: 'Screenshot of the background parallax feature'
+- title: Interactive Mouse
+  description: On this page, I have build an interactive mouse that changes depending on what element it is interactive with
+  link: /interactive-mouse
+  image_src: assets/images/background-parallax.png
+  image_alt: 'Screenshot of the background parallax feature'
