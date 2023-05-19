@@ -1,0 +1,19 @@
+body,
+body * {
+    cursor: none;
+}
+
+#interactive-cursor {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    position: absolute;
+    pointer-events: none;
+    transition: color 0.6s ease-in-out, scale 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+}

@@ -18,3 +18,8 @@
   link: /background-parallax
   image_src: assets/images/background-parallax.png
   image_alt: 'Screenshot of the background parallax feature'
+- title: Interactive Cursor
+  description: On this page, I have build an Interactive Cursor that changes depending on what element it is interactive with
+  link: /interactive-cursor
+  image_src: assets/images/interactive-cursor-feature.jpg
+  image_alt: 'Screenshot of the interactive cursor feature'
