@@ -5,3 +5,6 @@
     border-radius: 50px;
     position: absolute;
 }
+body div {
+    z-index: 2;
+}
