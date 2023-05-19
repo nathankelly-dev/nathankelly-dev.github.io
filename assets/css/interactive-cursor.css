@@ -4,6 +4,7 @@
     background-color: red;
     border-radius: 50px;
     position: absolute;
+    pointer-events: none;
 }
 body div {
     z-index: 2;
