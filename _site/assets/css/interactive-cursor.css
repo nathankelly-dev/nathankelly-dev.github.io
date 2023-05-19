@@ -1,11 +1,15 @@
+body,
+body * {
+    cursor: none;
+}
+
 #interactive-cursor {
-    width: 30px;
-    height: 30px;
-    background-color: red;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 50px;
     position: absolute;
     pointer-events: none;
-}
-body div {
-    z-index: 2;
+    transition: color 0.6s ease-in-out, scale 0.6s ease-in-out;
 }
